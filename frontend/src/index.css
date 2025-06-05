@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-blue: #3b82f6;
+  --secondary-indigo: #6366f1;
+  --white-background: #fff;
+  --dark-gray: #111827;
+  --slate-gray: #374151;
+  --error: #ef4444;
+  --hover-gray: #e5e7eb;
+  --heading: 52px;
+  --normal-text: 28px;
+  --sub-heading: 44px;
+  --large-spacing: 24px;
+  --medium-spacing: 18px;
+  --small-spacing: 12px;
+  font-family: "Poppins", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+html{
+    background: #fcfbf9;
+}
+/* body {
+  padding: 0% 4%;
+} */
+
+.spline-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  overflow: hidden;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.animate-fade-in {
+  animation: fadeIn 1.5s ease-in-out forwards;
+}
