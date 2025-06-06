@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const upload = require('../middleware/upload');
-const Material = require('../models/Material');
+const Material = require('../models/material.js');
 
 // POST - Create Material with file upload
 router.post('/', upload.single('file'), async (req, res) => {
