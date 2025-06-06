@@ -2,7 +2,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import SkeletonCard from "../components/SkeletonCard";
 
-const BASE_URL = import.meta.env.VITE_BACKEND_BASE_URL || "";
+const BASE_URL = import.meta.env.VITE_REACT_APP_BACKEND_BASEURL || "https://e-guide.vercel.app";
 
 const MaterialList = () => {
   const [data, setData] = useState([]);

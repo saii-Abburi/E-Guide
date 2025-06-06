@@ -5,7 +5,7 @@ import AdminProfile from "../components/profile";
 import useProfile from "../hooks/useProfile";
 import { Navigate } from "react-router-dom";
 
-const BASE_URL = import.meta.env.VITE_BACKEND_BASE_URL || "";
+const BASE_URL = import.meta.env.VITE_REACT_APP_BACKEND_BASEURL ||  "https://e-guide.vercel.app";
 
 const AdminDashBoard = () => {
   const [materials, setMaterials] = useState([]);
